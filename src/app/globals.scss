@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+@mixin center {
+  text-align: center;
+}
+
+body {
+  background-color: rgb(242, 247, 251);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @include center;
+}
