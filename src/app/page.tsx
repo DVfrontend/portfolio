@@ -1,7 +1,9 @@
+// import Layout from "@/components/layout/Layout"
+
 export default function Home() {
   return (
     <>
-      <h1>ikg</h1>
+        <h1>Choose Language</h1>
     </>
   )
 }

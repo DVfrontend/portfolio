@@ -1,4 +1,5 @@
 import "./globals.scss";
+import Layout from "@/components/layout/Layout";
 
 export default function RootLayout({
   children,
@@ -8,7 +9,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        {children}
+        <Layout>
+          <main className="mt-5 text-black">{children}</main>
+        </Layout>
       </body>
     </html>
   );

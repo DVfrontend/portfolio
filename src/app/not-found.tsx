@@ -2,7 +2,7 @@
 
 import { useEffect } from "react";
 import { useRouter } from "next/navigation";
-import Link from "next/link.js";
+// import Image from "next/image";
 // import Heading from "./components/layout/eng/Heading";
 
 export default function Error() {
@@ -16,9 +16,11 @@ export default function Error() {
   return (
     <div>
       <h1>Not Found</h1>
+      {/* <Image>
+
+      </Image> */}
       <p>Could not find requested resource</p>
       {/* <Heading text="404" /> */}
-      <Link href="/">Return Home</Link>
     </div>
   )
 }
