@@ -1,9 +1,10 @@
-// import Layout from "@/components/layout/Layout"
+// import 
 
 export default function Home() {
+
   return (
     <>
-        <h1>Choose Language</h1>
+      <h1 className="text-4xl font-bold">Dv</h1>
     </>
   )
 }

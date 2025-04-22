@@ -1,13 +1,15 @@
 export type Socials = {
   name: string,
-  id?: number,
+  id: number,
   url: string
 }
 
 export type Project = {
-  title: string;
-  slug: string;
-  description: string;
-  image: string;
+  id: number,
+  title: string,
   technologies: string[];
 };
+
+export type LayoutProps = {
+  children: React.ReactNode;
+}

@@ -14,14 +14,14 @@ type Nav = {
 const nav: Nav[] = [
   { id: 1, title: "Home", path: '/' },
   { id: 2, title: "Contact", path: '/contact' },
-  { id: 3, title: "About", path: '/about' },
+  { id: 3, title: "Projects", path: '/projectsPage' },
 ];
 
 export default function Navbar() {
   const pathname = usePathname();
 
   return (
-    <nav className='fixed bg-gray-900 top-0 text-right right-0 left-0 text-white p-3'>
+    <nav className='fixed bg-gray-900 top-0 text-left right-0 left-0 text-white p-3'>
       {/* <Image src={'/logo.jpg'} alt='logo' width={40} height={40}> */}
 {/* logo*/}
       {/* </Image> */}
@@ -34,6 +34,7 @@ export default function Navbar() {
           </Link>
         ))}
       </div>
+      {/* переключатель темы с иконкамим */}
     </nav>
   );
 }

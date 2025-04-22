@@ -1,12 +1,17 @@
 [
   {
     "id": 1,
-    "title": "1",
-    "description": "Cinema Web"
+    "title": "Cinema Web",
+    "technologies": ["Next", "Tailwind", "Redux", "TS", "SCSS", "Git"]
   },
   {
     "id": 2,
-    "title": "2",
-    "description": ""
+    "title": "Online Magazine",
+    "technologies": ["Next", "Tailwind", "Redux", "TS", "SCSS", "Git"]
+  },
+  {
+    "id": 3,
+    "title": "Calculator",
+    "technologies": ["Vite", "Tailwind", "TS", "SCSS"]
   }
 ]

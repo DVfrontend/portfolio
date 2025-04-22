@@ -1,5 +1,5 @@
 import "./globals.scss";
-import Layout from "@/components/layout/Layout";
+import Layout from "@/components/layout/layout";
 
 export default function RootLayout({
   children,
@@ -7,10 +7,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="dark">
       <body>
         <Layout>
-          <main className="mt-5 text-black">{children}</main>
+          <main className="mt-7 text-black">{children}</main>
         </Layout>
       </body>
     </html>
