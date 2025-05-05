@@ -1,9 +1,7 @@
 'use client';
 
-// import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import styles from '../ui/Navbar.module.scss';
 
 type Nav = {
   id: number;
@@ -12,9 +10,9 @@ type Nav = {
 };
 
 const nav: Nav[] = [
-  { id: 1, title: "Home", path: '/' },
-  { id: 2, title: "Contact", path: '/contact' },
-  { id: 3, title: "Projects", path: '/projectsPage' },
+  { id: 1, title: "Дом", path: '/' },
+  { id: 2, title: "Контакт", path: '/contact' },
+  { id: 3, title: "Проекты", path: '/projectsPage' },
 ];
 
 export default function Navbar() {
@@ -22,19 +20,15 @@ export default function Navbar() {
 
   return (
     <nav className='fixed bg-gray-900 top-0 text-left right-0 left-0 text-white p-3'>
-      {/* <Image src={'/logo.jpg'} alt='logo' width={40} height={40}> */}
-{/* logo*/}
-      {/* </Image> */}
       <div>
         {nav.map(({ id, title, path }) => (
           <Link key={id} href={path} className='m-3'>
-            <span className={pathname === path ? styles.active : undefined}>
+            <span className={pathname === path ? 'text-blue-500 border-b-2 border-blue-500 pb-1 font-medium' : undefined}>
               {title}
             </span>
           </Link>
         ))}
       </div>
-      {/* переключатель темы с иконкамим */}
     </nav>
   );
 }

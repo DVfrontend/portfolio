@@ -1,9 +1,10 @@
 import styles from './page.module.scss'
-import { Card } from "@/components/layout/card"
+import { Card } from "@/components/ui/card"
+import { Container } from "../lib/utils"
 
 export default function ProjectsPage() {
   return (
-    <>
+    <Container>
       <div className={styles.container}>
         {/* <div className="rotate-x-15 -rotate-y-30">
           <Card1 />
@@ -16,6 +17,6 @@ export default function ProjectsPage() {
         </div> */}
       </div>
       <Card />
-    </>
+    </Container>
   )
 }

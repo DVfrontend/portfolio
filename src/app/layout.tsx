@@ -7,10 +7,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="dark">
+    <html lang="en">
       <body>
         <Layout>
-          <main className="mt-7 text-black">{children}</main>
+          <main className="mt-13">{children}</main>
         </Layout>
       </body>
     </html>
